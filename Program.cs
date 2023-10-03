@@ -6,9 +6,12 @@ namespace NumbersGame
     {
         static void Main(string[] args)
         {
-          
-
-            Console.WriteLine("Välkommen! Jag tänker på ett nummer. Kan du gissa vilket? Du får fem försök."); //Explain the game to the user
+           Console.WriteLine("Välkommen! Jag tänker på ett nummer. Kan du gissa vilket? Du får fem försök."); //Explain the game to the user
+           
+          CheckGuess();                                                                                        //Add the method "CheckGuess() in main method
+        }
+          statick void CheckGuess()                                                                            //create a method
+          {
 
             Random randomNumber = new Random(); 
             int secretNumber = randomNumber.Next(1, 20);                                                       // picks a random number between 1-20
